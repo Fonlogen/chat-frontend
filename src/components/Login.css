@@ -1,0 +1,148 @@
+.LoginPanel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 850px;
+    background-color: #131a27;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    gap: 1px;
+}
+
+.LoginPanel__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: #1e2738;
+    padding: 20px;
+}
+
+.LoginPanel__left__title {
+    padding: 30px;
+}
+
+.LoginPanel__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: #1e2738;
+    padding: 20px;
+}
+
+.LoginPanel__right__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #1e2738;
+    padding: 20px;
+    gap: 10px;
+}
+
+.LoginPanel__right__form label {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.LoginPanel__right__form input[type="text"], .LoginPanel__right__form input[type="password"] {
+    height: 30px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1e2738;
+    border: 1px solid #313f5a;
+    text-align: center;
+}
+
+.LoginPanel__right__form input[type="text"]:focus, .LoginPanel__right__form input[type="password"]:focus {
+    outline: none;
+}
+
+.LoginPanel__right__form input[type="button"] {
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 70px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e34e74;
+    border: 1px solid #313f5a;
+    text-align: center;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.LoginPanel__right__form input[type="button"]:hover {
+    background-color: #e34e74;
+    opacity: 0.8;
+}
+
+.LoginPanel__right__form input[type="button"]:focus {
+    outline: none;
+}
+
+.LoginPanel__right__form input[type="button"]:active {
+    background-color: #e34e74;
+    opacity: 0.6;
+}
+
+.LoginPanel__right__form input[type="button"]:disabled {
+    background-color: #e34e74;
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.LoginPanel__right__form__input__forgot {
+    color: #e34e74;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.LoginPanel__right__form__input__forgot h3 {
+    width: 100%;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #253046 ;
+}
+
+.LoginPanel__right__form__input__forgot a {
+    color: #e34e74;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.LoginPanel__right__form__input__forgot a:hover {
+    text-decoration: underline;
+}
+
+.LoginPanel__right__form__input__forgot a:active {
+    text-decoration: none;
+}
+
+.LoginPanel__right__form__input__forgot a:focus {
+    outline: none;
+}
