@@ -77,6 +77,14 @@
     padding: 20px;
 }
 
+.loginPanel__right__title h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .LoginPanel__right__form {
     display: flex;
     flex-direction: column;
@@ -110,6 +118,7 @@
 
 .LoginPanel__right__form input[type="text"]:focus, .LoginPanel__right__form input[type="password"]:focus {
     outline: none;
+    background-color: #2b3549;
 }
 
 .LoginPanel__right__form input[type="button"] {

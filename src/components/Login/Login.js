@@ -24,8 +24,8 @@ function Login(params) {
             <div className="LoginPanel__right">
                 {(
                 route === "login"
-                ? <LoginForm tryLogin={params.tryLogin} />
-                : <RegisterForm tryRegister={params.tryRegister}/>
+                ? <LoginForm tryLogin={params.tryLogin} setRoute={setRoute}/>
+                : <RegisterForm tryRegister={params.tryRegister} setRoute={setRoute}/>
                 )}
             </div>
         </div>
@@ -62,7 +62,7 @@ function LoginForm( params ) {
                 <h3> Can't login?</h3>
                 <a href="#">Request a password reset</a>
 
-                <a href="#">Create a new account</a>
+                <a href="#" onClick={() => { params.setRoute('register') }}>Create a new account</a>
             </div>
         </form>
         </>
