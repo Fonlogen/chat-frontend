@@ -32,7 +32,7 @@ function App() {
     useEffect(() => {
         fetch('http://localhost:8055/').then(response => response.text()).then(data => {
             console.table(data);
-            setResult(data);
+            setResult(data); 
         }, []);
     });
 
